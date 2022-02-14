@@ -1,0 +1,396 @@
+@font-face {
+    font-family: "GraphikLCG-Regular";
+    src: url(../fonts/GraphikLCG-Regular.ttf);
+    line-height: 400;
+}
+
+@font-face {
+    font-family: "GraphikLCG-Semibold";
+    src: url(../fonts/GraphikLCG-Semibold.ttf);
+    line-height: 600;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+} 
+
+.header__fix-size {
+    width: 1338px;
+    margin: 0 auto;
+    padding: 25px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fix-size {
+    width: 1290px;
+    margin: 0 auto;
+}
+
+.container__nav-logo {
+    margin-right: 51px;
+}
+
+.container__nav {
+    align-items: center;
+}
+
+.container__nav__menu__item a {
+    font-family: "GraphikLCG-Regular";
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+    padding-right: 50px;
+}
+
+.delete-padding a {
+    padding-right: 0;
+}
+
+.container__button button {
+    width: 120px;
+    height: 45px;
+}
+
+.container__button-white {
+    font-family: "GraphikLCG-Semibold";
+    font-size: 16px;
+    margin-right: 10px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.container__button-orange {
+    font-family: "GraphikLCG-Semibold";
+    font-size: 16px;
+    border: none;
+    background: #FF6336;
+    color: #fff;
+}
+
+.header__hr {
+    border: 1px solid #ccc;
+    margin: 0;
+}
+
+.main__section-main_info {
+    height: 862px;
+    padding-top: 104px;
+    background: url("/images/code.png") 650px 120px / 759px 529px no-repeat;
+}
+
+.main__section-main_info_title {
+    width: 552px;
+    font-family: "GraphikLCG-Semibold";
+    font-size: 65px;
+    line-height: 70px;
+}
+
+.main__section-main_info_text {
+    width: 471px;
+    font-family: "GraphikLCG-Regular";
+    font-size: 25px;
+    line-height: 35px;
+    margin: 50px 0;
+}
+
+.main__container__button button {
+    width: 160px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.main__section-main_info_note {
+    font-family: "GraphikLCG-Regular";
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.main__section-orange {
+    height: 455px;
+    background: #FF9C7D;
+    padding-top: 108px;
+}
+
+.main__section__title {
+    font-family: "GraphikLCG-Semibold";
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.main__section-orange p {
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.main__section-orange__companies {
+    justify-content: space-around;
+}
+
+.main__section-cards {
+    padding-top: 100px;
+}
+
+.main__section-card {
+    height: 632px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 250px;
+}
+
+.main__section-cards__info {
+    width: 493px;
+}
+
+.main__section-cards__info__text {
+    font-family: "GraphikLCG-Regular";
+    font-size: 20px;
+    line-height: 30px;
+    margin: 30px 0;
+}
+
+.main a {
+    color: #000;
+}
+
+.link-start {
+    font-family: "GraphikLCG-Semibold";
+    display: block;
+    text-decoration: none;
+}
+
+.main__section-yellow {
+    background: #FFF8E4;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.small-card__container {
+    margin-top: 58px;
+    height: 702px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.small-card {
+    width: 330px;
+    height: 294px;
+    padding-top: 21px;
+}
+
+.section-yellow__subtitle {
+    font-family: "GraphikLCG-Semibold";
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+}
+
+.section-yellow__text {
+    font-family: "GraphikLCG-Regular";
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.section-white {
+    background-color: #fff;
+    padding: 150px 0;
+}
+
+.card-container {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container__card {
+    width: 409px;
+}
+
+.card-container__image {
+    height: 250px;
+}
+
+.section-white__subtitle {
+    font-family: "GraphikLCG-Semibold";
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.section-blue {
+    background: #C9E8F2;
+    height: 468px;
+    padding-top: 63px;
+    font-family: "GraphikLCG-Regular";
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.section-blue p {
+    width: 895px;
+}
+
+.section-blue .flex {
+    justify-content: space-between;
+}
+
+.section-brown {
+    background: #DABC98;
+    padding: 80px 0;
+    font-family: "GraphikLCG-Semibold";
+    font-size: 35px;
+    line-height: 50px;
+}
+
+.section-brown__container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-brown p {
+    width: 461px;
+}
+
+.border {
+    border-left: 1px solid #000;
+}
+
+.section-bird {
+    background: #fff;
+    padding: 165px 0;
+    text-align: center;
+}
+
+.section-bird p:first-child {
+    width: 791px;
+    margin: 0 auto;
+}
+
+.section-bird__info {
+    font-family: "GraphikLCG-Regular";
+    font-size: 25px;
+    line-height: 30px;
+    color: #000;
+    width: 539px;
+    margin: 0 auto;
+}
+
+.section-bird img {
+    margin: 25px 0;
+}
+
+.section-bird button {
+    width: 193px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+.orange {
+    background: #FF9C7D;
+}
+
+.orange .section-bird__info {
+    margin-top: 29px;
+    margin-bottom: 54px;
+}
+
+.button-black {
+    width: 160px;
+    height: 60px;
+    background: #000000;
+    color: #fff;
+    font-family: "GraphikLCG-Semibold";
+    font-size: 17px;
+}
+
+.footer {
+    padding-top: 92px;
+    padding-bottom: 48px;
+}
+
+.footer__flex-container {
+    justify-content: space-between;
+    margin-bottom: 95px;
+}
+
+.footer__card {
+    width: 300px;
+}
+
+.footer__title {
+    font-family: "GraphikLCG-Semibold";
+    font-size: 40px;
+    margin-bottom: 28px;
+}
+
+.specialized {
+    margin-top: 31px;
+    margin-bottom: 11px;
+    display: block;
+}
+
+.footer__hr {
+    border: 1px solid #000;
+    margin-top: 0;
+    margin-bottom: 47px;
+}
+
+.footer__card .main__section-cards__info__text {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.footer__subtitle {
+    font-family: "GraphikLCG-Semibold";
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+}
+
+.footer__nav__card {
+    width: 187px;
+    margin-right: 34px;
+}
+
+.footer__nav__card .footer__subtitle {
+    margin-bottom: 21px;
+}
+
+.footer__nav-items a {
+    display: block;
+    margin-bottom: 15px;
+    font-family: "GraphikLCG-Regular";
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer__copyright {
+    justify-content: space-between;
+}
+
+.delete-margin {
+    margin-right: 0;
+}
+
+.footer__copyright__text {
+    margin-left: 14px;
+    width: 300px;
+    font-family: "GraphikLCG-Regular";
+    font-size: 12px;
+    line-height: 15px;      
+}
+
+.text-wigth {
+    width: 185px;
+}
