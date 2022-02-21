@@ -19,17 +19,28 @@
     display: flex;
 } 
 
-.header__fix-size {
-    width: 1338px;
+.header {
+    max-width: 1290px;
+    min-width: 320px;
     margin: 0 auto;
-    padding: 25px 0;
+    
+}
+
+.header__container {
+    width: 1290px;
+    padding: 25px 10px;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+
 }
 
 .fix-size {
-    width: 1290px;
+    max-width: 1290px;
+    min-width: 320px;
     margin: 0 auto;
+    padding: 0 10px;
+
 }
 
 .container__nav-logo {
@@ -79,9 +90,7 @@
 }
 
 .main__section-main_info {
-    height: 862px;
-    padding-top: 104px;
-    background: url("/images/code.png") 650px 120px / 759px 529px no-repeat;
+    padding: 150px 0;
 }
 
 .main__section-main_info_title {
@@ -112,9 +121,8 @@
 }
 
 .main__section-orange {
-    height: 455px;
     background: #FF9C7D;
-    padding-top: 108px;
+    padding: 108px 0;
 }
 
 .main__section__title {
@@ -133,6 +141,9 @@
 
 .main__section-orange__companies {
     justify-content: space-around;
+    max-width: 1290px;
+    min-width: 320px;
+    margin: 0 auto;
 }
 
 .main__section-cards {
@@ -393,4 +404,300 @@
 
 .text-wigth {
     width: 185px;
+}
+
+@media (max-width: 1290px) {
+    .header__container {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .container__button {
+        padding-top: 20px;
+    }
+
+    .main__section-main_info {
+        padding: 50px 0;
+    }
+
+    .container__main_info {
+        flex-direction: column;
+    }
+
+    .main__section-img {
+        order: -1;
+        text-align: center;
+    }
+
+    .container__main_info-text {
+        margin-top: 35px;
+    }
+
+    .container__main_info-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main__section-orange {
+        padding-top: 80px;
+    }
+
+    .main__section-orange__companies {
+        max-width: 464px;
+        flex-wrap: wrap;
+    }
+
+    .main__section-orange__companies img {
+        margin-bottom: 10px;
+    }
+
+    .main__section-card {
+        flex-direction: column;
+        margin-bottom: 100px;
+        height: auto;
+    }
+
+    .main__section-card img:nth-child(even) {
+        order: -1;
+    }
+
+    .main__section-card img,
+    .footer__card,
+    .footer__flex-container {
+        margin-bottom: 35px;
+    }
+
+    .small-card__container,
+    .section-blue {
+        height: auto;
+    }
+
+    .section-white {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .card-container,
+    .section-blue .flex,
+    .section-brown__container,
+    .footer__flex-container {
+        flex-direction: column;
+    }
+
+    .card-container__card {
+        margin: 0 auto;
+    }
+
+    .section-blue {
+        padding: 50px 0;
+    }
+
+    .section-blue p {
+        width: 770px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .section-brown__container {
+        text-align: center;
+    }
+
+    .border {
+        border: none;
+    }
+
+    .section-brown p,
+    .section-bird__info {
+        margin: 20px auto;
+    }
+
+    .section-bird img,
+    .footer__nav .flex {
+        width: 770px;
+    }
+
+    .footer__nav .flex {
+        justify-content: space-between;
+    }
+
+    .footer__nav__card {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 770px) {
+    .container__nav {
+        flex-direction: column;
+    }
+
+    .container__nav-logo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .container__nav__menu__item a {
+        padding-right: 35px;
+    }
+
+    .main__section-img img {
+        width: 510px;
+    }
+
+    .main__section-main_info_title {
+        width: 510px;
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    
+    .main__section-main_info_text {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 20px 0;
+    }
+
+    .main__section-orange p {
+        width: 510px;
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .main__section-orange,
+    .section-white,
+    .main__section-yellow,
+    .section-brown,
+    .section-bird {
+        padding: 50px 0;
+    }
+
+    .main__section-card img,
+    .section-blue p,
+    .section-bird p:first-child,
+    .section-bird__info,
+    .section-bird img {
+        width: 510px;
+    }
+
+    .main__section__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .small-card {
+        padding-top: 21px;
+        margin: 15px auto;
+    }
+
+    .small-card__container {
+        margin-top: 0;
+    }
+
+    .footer__nav.flex {
+        flex-direction: column;
+    }
+
+    .footer__nav__card {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+@media (max-width: 510px) {
+    .container__nav__menu__list {
+        flex-direction: column;
+    }
+
+    .container__nav__menu__item a {
+        padding-right: 0;
+    }
+
+    .container__nav__menu__item,
+    .main__section-card {
+        margin-bottom: 15px;
+    }
+
+    .container__button {
+        flex-direction: column;
+    }
+
+    .container__button button {
+        width: 100vw;
+        margin-right: 0;
+    }
+
+    .container__button-white {
+        margin-bottom: 10px;
+    }
+
+    .main__section-img img,
+    .main__section-card img,
+    .main__section-cards__info,
+    .main__section-main_info_title,
+    .main__section-main_info_text,
+    .card-container__card,
+    .section-blue p,
+    .section-brown p,
+    .border,
+    .section-bird p:first-child,
+    .section-bird__info,
+    .section-bird img {
+        width: 320px;
+    }
+
+    .main__section-main_info_title,
+    .main__section__title {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .main__section-main_info_text,
+    .main__section-cards__info__text,
+    .section-blue p,
+    .section-bird__info {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .main__section-orange p {
+        width: 320px;
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .main__container__button button {
+        width: 100vw;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .main__section-cards {
+        padding-top: 50px;
+    }
+
+    .section-brown p {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    .section-bird button {
+        width: 100%;
+    }
+
+    .footer__copyright,
+    .footer__copyright div {
+        flex-direction: column;
+    }
+
+    .footer__copyright p {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    
 }
